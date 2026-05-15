@@ -25,7 +25,7 @@ let ordenes ={
       descripcion:"se mojo"
     }
   ],
-  completada:[
+  completadas:[
         {
       id:1,
       nombre:"pepito",
@@ -40,7 +40,7 @@ let ordenes ={
       telefono:530930505,
       marcaTelefono:"redmi",
       modelo:"note 15 pro",
-      descripcion:"recuperacion de softwar"
+      descripcion:"recuperacion de software"
     }
   ]
 
