@@ -1,23 +1,28 @@
-let clientes ={
-  santiago : {
-    id = 1,
-    telefono:530930505
+let clientes = [
+  {
+    id:1,
+    telefono:530930505,
+    nombre:"santiago"
   },
-  arturo:{
+  {
     id:2,
     telefono:530930505,
-
+    nombre:"arturo"
   },
-  pedro:{
+  {
     id:3,
-    telefono:539230505
+    telefono:539230505,
+    nombre:"pedro"
   },
-  juan:{
+  {
     id:4,
-    telefono:53523095
+    telefono:53523095,
+    nombre: "juan"
   },
-  pepito:{
+  {
     id:5,
-    telefono:123490479
+    telefono:123490479,
+    nombre:"pepito"
   }
-}
+];
+module.exports.clientes = clientes;

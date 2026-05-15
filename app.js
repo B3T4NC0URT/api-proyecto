@@ -6,11 +6,16 @@ const app = express();
 const PORT = 3000;
 
 //se importan las ordenes
-const {ordenes} = require('./datos/ordenes.js')
+const {ordenes} = require('./datos/ordenes.js');
+//se importan los clientes
+const clientes = require('./datos/clientes.js');
 //se importa el modulo orden
-const routerOrden = require('./rutas/orden.js')
+const routerOrden = require('./rutas/routerOrden.js');
 app.use('/api/ordenes', routerOrden);
 
+const routerClientes = require('./rutas/routerClientes.js');
+app.use('/api/clientes', routerClientes);
+//ruta raiz
 app.get('/', (req,res) => {
   res.send("Servidor opertativo")
 })

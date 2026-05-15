@@ -1,8 +1,6 @@
 //Desde este modulo se van a gestionar las rutas de orden
 //se importa express
 const express = require('express');
-// se crea la instancia app
-const app = express();
 //se importa el modulo de ordenes
 const {ordenes} = require('../datos/ordenes.js')
 //se crea el router
