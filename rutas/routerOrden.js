@@ -7,11 +7,11 @@ const controladorOrdenes = require('../controladores/controladorOrdenes.js');
 
 routerOrden.use(express.json());
 
+routerOrden.route('/')
 //endpoint para mostrar todas las ordenes
-routerOrden.get('/', controladorOrdenes.obtenerOrden);
-
-//endpoint para crear una orden
-routerOrden.post('/', controladorOrdenes.crearOrden);
+  .get(controladorOrdenes.obtenerOrden)
+  //endpoint para crear una orden
+  .post(controladorOrdenes.crearOrden);
 
 routerOrden.route('/:id')
   //Endpoint para buscar una orden especifica

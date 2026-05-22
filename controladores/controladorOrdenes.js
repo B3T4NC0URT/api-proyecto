@@ -7,7 +7,6 @@ class ControladorOrdenes {
   };
   obtenerOrden(req,res){
     const {estado} = req.query;
-    console.log(req.query)
     if(Object.keys(req.query).length == 0){
       return res.status(200).json(ordenes);
     }

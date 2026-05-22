@@ -1,5 +1,6 @@
-let clientes = [
-  {
+let clientes = {
+  clientes:[
+    {
     id:1,
     documento:1234567,
     telefono:530930505,
@@ -28,6 +29,6 @@ let clientes = [
     cedula:1523467,
     telefono:123490479,
     nombre:"pepito"
-  }
-];
-module.exports.clientes = clientes;
+  }]
+};
+module.exports = clientes;
