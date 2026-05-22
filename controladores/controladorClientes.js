@@ -39,7 +39,7 @@ class ControladorClientes {
   eliminarCliente(req,res){
     const id = req.params.id;
     const indice = clientes.findIndex(orden => orden.id == id);
-    if(cliente[indice]){
+    if(clientes[indice -1]){
     clientes.splice(indice,1);
     res.status(200).json(clientes)
     }else{
